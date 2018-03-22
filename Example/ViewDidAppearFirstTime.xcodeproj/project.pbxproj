@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B14ABE82063E59100E89491 /* ObjectiveCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B14ABE72063E59100E89491 /* ObjectiveCViewController.m */; };
 		2A8296F1C267E40442D37666 /* Pods_ViewDidAppearFirstTime_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F7F5D28BDDC222B910AF62 /* Pods_ViewDidAppearFirstTime_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -30,6 +31,9 @@
 /* Begin PBXFileReference section */
 		18F7F5D28BDDC222B910AF62 /* Pods_ViewDidAppearFirstTime_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewDidAppearFirstTime_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A55B29848E0489F095555A6 /* Pods_ViewDidAppearFirstTime_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewDidAppearFirstTime_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B14ABE52063E59000E89491 /* ViewDidAppearFirstTime_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewDidAppearFirstTime_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		1B14ABE62063E59100E89491 /* ObjectiveCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveCViewController.h; sourceTree = "<group>"; };
+		1B14ABE72063E59100E89491 /* ObjectiveCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCViewController.m; sourceTree = "<group>"; };
 		3F67CEE944CABE6136444B6C /* Pods-ViewDidAppearFirstTime_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewDidAppearFirstTime_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViewDidAppearFirstTime_Tests/Pods-ViewDidAppearFirstTime_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4B42335277624230CB581D4B /* Pods-ViewDidAppearFirstTime_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewDidAppearFirstTime_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViewDidAppearFirstTime_Tests/Pods-ViewDidAppearFirstTime_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ViewDidAppearFirstTime_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewDidAppearFirstTime_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,9 +46,9 @@
 		607FACE51AFB9204008FA782 /* ViewDidAppearFirstTime_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewDidAppearFirstTime_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		82BE89B5876AD137900245CD /* ViewDidAppearFirstTime.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ViewDidAppearFirstTime.podspec; path = ../ViewDidAppearFirstTime.podspec; sourceTree = "<group>"; };
-		962844E698C70DF8F19B73D9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		ACFF5E3A52B1C75F9921B3BB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		82BE89B5876AD137900245CD /* ViewDidAppearFirstTime.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ViewDidAppearFirstTime.podspec; path = ../ViewDidAppearFirstTime.podspec; sourceTree = "<group>"; };
+		962844E698C70DF8F19B73D9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		ACFF5E3A52B1C75F9921B3BB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B8265D30E548B3C053213671 /* Pods-ViewDidAppearFirstTime_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewDidAppearFirstTime_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViewDidAppearFirstTime_Example/Pods-ViewDidAppearFirstTime_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D7C6F5DA4369E36499A1DC3D /* Pods-ViewDidAppearFirstTime_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewDidAppearFirstTime_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViewDidAppearFirstTime_Example/Pods-ViewDidAppearFirstTime_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +110,9 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				1B14ABE62063E59100E89491 /* ObjectiveCViewController.h */,
+				1B14ABE72063E59100E89491 /* ObjectiveCViewController.m */,
+				1B14ABE52063E59000E89491 /* ViewDidAppearFirstTime_Example-Bridging-Header.h */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -215,7 +222,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0920;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -372,6 +379,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				1B14ABE82063E59100E89491 /* ObjectiveCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -504,7 +512,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -517,11 +525,14 @@
 			baseConfigurationReference = B8265D30E548B3C053213671 /* Pods-ViewDidAppearFirstTime_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ViewDidAppearFirstTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ViewDidAppearFirstTime/ViewDidAppearFirstTime_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -532,11 +543,13 @@
 			baseConfigurationReference = D7C6F5DA4369E36499A1DC3D /* Pods-ViewDidAppearFirstTime_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ViewDidAppearFirstTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ViewDidAppearFirstTime/ViewDidAppearFirstTime_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

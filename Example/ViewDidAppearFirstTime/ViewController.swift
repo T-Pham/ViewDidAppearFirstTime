@@ -7,18 +7,31 @@
 //
 
 import UIKit
+import ViewDidAppearFirstTime
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, FirstAppearance {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    private let objectiveCViewController = ObjectiveCViewController()
+
+    func viewWillAppearFirstTime(_ animated: Bool) {
+        print("ViewController viewWillAppearFirstTime")
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("ViewController viewWillAppear")
     }
 
+    func viewDidAppearFirstTime(_ animated: Bool) {
+        print("ViewController viewDidAppearFirstTime")
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("ViewController viewDidAppear")
+    }
+
+    @IBAction func showObjectiveCViewController() {
+        present(objectiveCViewController, animated: true, completion: nil)
+    }
 }
-

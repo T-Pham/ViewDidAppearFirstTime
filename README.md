@@ -1,29 +1,44 @@
 # ViewDidAppearFirstTime
 
-[![CI Status](http://img.shields.io/travis/t-pham/ViewDidAppearFirstTime.svg?style=flat)](https://travis-ci.org/t-pham/ViewDidAppearFirstTime)
-[![Version](https://img.shields.io/cocoapods/v/ViewDidAppearFirstTime.svg?style=flat)](http://cocoapods.org/pods/ViewDidAppearFirstTime)
-[![License](https://img.shields.io/cocoapods/l/ViewDidAppearFirstTime.svg?style=flat)](http://cocoapods.org/pods/ViewDidAppearFirstTime)
-[![Platform](https://img.shields.io/cocoapods/p/ViewDidAppearFirstTime.svg?style=flat)](http://cocoapods.org/pods/ViewDidAppearFirstTime)
+This library adds support for `viewWillAppearFirstTime(_:)` and `viewDidAppearFirstTime(_:)` methods to your `UIViewController` subclasses.
 
-## Example
+Those methods are called automagically when `viewWillAppear(_:)` and `viewDidAppear(_:)` of the instance are called only for the first time, respectively.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+# Usage
 
-## Requirements
+In your AppDelegate, activate the library:
 
-## Installation
+```swift
+import ViewDidAppearFirstTime
 
-ViewDidAppearFirstTime is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'ViewDidAppearFirstTime'
+...
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    UIViewController.activateFirstAppearance()
+    return true
+}
 ```
 
-## Author
+Then, in your UIViewController subclasses:
 
-t-pham, minhthanh@me.com
+```swift
+class ViewController: UIViewController, FirstAppearance {
 
-## License
+    func viewWillAppearFirstTime(_ animated: Bool) {
+        print("ViewController viewWillAppearFirstTime")
+    }
 
-ViewDidAppearFirstTime is available under the MIT license. See the LICENSE file for more info.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("ViewController viewWillAppear")
+    }
+
+    func viewDidAppearFirstTime(_ animated: Bool) {
+        print("ViewController viewDidAppearFirstTime")
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("ViewController viewDidAppear")
+    }
+}
+```
