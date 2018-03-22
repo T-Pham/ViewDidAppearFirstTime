@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ViewDidAppearFirstTime_Example' do
+  pod 'ViewDidAppearFirstTime', :path => '../'
+
+  target 'ViewDidAppearFirstTime_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
