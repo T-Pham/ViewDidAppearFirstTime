@@ -17,7 +17,13 @@ public protocol FirstAppearance {
     optional func viewWillAppearFirstTime(_ animated: Bool)
 
     @objc
+    optional func viewWillAppearAgain(_ animated: Bool)
+
+    @objc
     optional func viewDidAppearFirstTime(_ animated: Bool)
+
+    @objc
+    optional func viewDidAppearAgain(_ animated: Bool)
 }
 
 extension UIViewController {
@@ -46,7 +52,9 @@ extension UIViewController {
 
     @objc
     func tpm_viewWillAppear(_ animated: Bool) {
-        if !self.viewWillAppearOnce {
+        if self.viewWillAppearOnce {
+            (self as? FirstAppearance)?.viewWillAppearAgain?(animated)
+        } else {
             (self as? FirstAppearance)?.viewWillAppearFirstTime?(animated)
             self.viewWillAppearOnce = true
         }
@@ -55,7 +63,9 @@ extension UIViewController {
 
     @objc
     func tpm_viewDidAppear(_ animated: Bool) {
-        if !self.viewDidAppearOnce {
+        if self.viewDidAppearOnce {
+            (self as? FirstAppearance)?.viewDidAppearAgain?(animated)
+        } else {
             (self as? FirstAppearance)?.viewDidAppearFirstTime?(animated)
             self.viewDidAppearOnce = true
         }

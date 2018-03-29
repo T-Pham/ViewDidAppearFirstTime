@@ -35,6 +35,10 @@
     NSLog(@"ObjectiveCViewController viewWillAppearFirstTime");
 }
 
+- (void)viewWillAppearAgain:(BOOL)animated {
+    NSLog(@"ObjectiveCViewController viewWillAppearAgain");
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     NSLog(@"ObjectiveCViewController viewWillAppear");
@@ -42,6 +46,10 @@
 
 - (void)viewDidAppearFirstTime:(BOOL)animated {
     NSLog(@"ObjectiveCViewController viewDidAppearFirstTime");
+}
+
+- (void)viewDidAppearAgain:(BOOL)animated {
+    NSLog(@"ObjectiveCViewController viewDidAppearAgain");
 }
 
 - (void)viewDidAppear:(BOOL)animated {

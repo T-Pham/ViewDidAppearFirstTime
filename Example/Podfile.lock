@@ -1,5 +1,5 @@
 PODS:
-  - ViewDidAppearFirstTime (0.1.0)
+  - ViewDidAppearFirstTime (0.2.0)
 
 DEPENDENCIES:
   - ViewDidAppearFirstTime (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ViewDidAppearFirstTime: a8a531aa5dd7fce412c3ddd29d1636e7431d267b
+  ViewDidAppearFirstTime: 47e592dcde21c8645d540dcb6484d8176a2f3b98
 
-PODFILE CHECKSUM: de7a2ee9f3e5874daedb9c3828b5810e8592cae6
+PODFILE CHECKSUM: ef964d686f763e179883088b2d97e8b96c3be4ef
 
 COCOAPODS: 1.3.1

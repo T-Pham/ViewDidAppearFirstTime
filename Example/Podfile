@@ -5,7 +5,5 @@ target 'ViewDidAppearFirstTime_Example' do
 
   target 'ViewDidAppearFirstTime_Tests' do
     inherit! :search_paths
-
-    
   end
 end

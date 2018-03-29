@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = 'ViewDidAppearFirstTime'
-  s.version          = '0.1.0'
-  s.summary          = 'Adds viewDidAppearFirstTime(_:) and viewWillAppearFirstTime(_:) to UIViewController.'
+  s.version          = '0.2.0'
+  s.summary          = 'Lets you know whether your `UIViewController` subclasses\' `viewWillAppear` and `viewDidAppear` are being called for the first time.'
   s.description      = <<-DESC
-ViewDidAppearFirstTime adds viewDidAppearFirstTime(_:) and viewWillAppearFirstTime(_:) to UIViewController.
+ViewDidAppearFirstTime lets you know whether your `UIViewController` subclasses\' `viewWillAppear` and `viewDidAppear` are being called for the first time.
                        DESC
   s.homepage         = 'https://github.com/T-Pham/ViewDidAppearFirstTime'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

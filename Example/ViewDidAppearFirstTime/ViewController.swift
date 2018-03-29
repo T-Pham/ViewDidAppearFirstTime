@@ -17,6 +17,10 @@ class ViewController: UIViewController, FirstAppearance {
         print("ViewController viewWillAppearFirstTime")
     }
 
+    func viewWillAppearAgain(_ animated: Bool) {
+        print("ViewController viewWillAppearAgain")
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("ViewController viewWillAppear")
@@ -24,6 +28,10 @@ class ViewController: UIViewController, FirstAppearance {
 
     func viewDidAppearFirstTime(_ animated: Bool) {
         print("ViewController viewDidAppearFirstTime")
+    }
+
+    func viewDidAppearAgain(_ animated: Bool) {
+        print("ViewController viewDidAppearAgain")
     }
 
     override func viewDidAppear(_ animated: Bool) {
